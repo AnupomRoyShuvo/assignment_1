@@ -21,7 +21,7 @@ Interface মূলত একটা object কেমন হবে, Object-এর
 
 পরিশেষে আমরা  Interfaces এবং Types — এর মধ্যে কিছু পার্থক্য বলতে পারি যে, 
 
-১/ interface এ declaration merging করা যায় কিন্তু করে types এ declaration merging করা সম্ভব নয়।
+১/ interface এ declaration merging করা যায় কিন্তু types এ declaration merging করা সম্ভব নয়।
 
 
 ২/ Union,Intersection,Tuple,Primitive শুধুমাত্র type দিয়ে করা যায় কিন্তু এগুলো interface দিয়ে করা সম্ভব নয়।
@@ -40,4 +40,28 @@ Interface মূলত একটা object কেমন হবে, Object-এর
 ## 2) keyof এর কাজ
 
 
-keyof কোনো object এর সকল key কে একটি string আকারে রিটার্ন করে।
+typescript এ keyof হল একটি TypeScript keyword, যা কোনো object type এর সমস্ত key গুলোকে একটি union type হিসেবে বের করে দেয়। 
+কোনো object এর সকল key কে একটি string আকারে রিটার্ন করে। সহজভাবে বললে,কোন object-এর সব প্রপার্টি কী কী তা type হিসেবে পাওয়া যায়। 
+
+
+keyof ব্যাবহার করার কারন গুলো হলঃ 
+
+
+১/ Object-এর key গুলোকে type হিসেবে পাওয়া
+
+
+২/ keyof ব্যবহার করে ফাংশনটি নিশ্চিত করে যে শুধু valid keys ব্যবহার করা যাবে।
+
+
+৩/ ভুল key দিলে compile-time এ error দেয় → কোড type-safe হয়।
+
+
+৪/ Type-safe code: ভুল property ব্যবহার করা বন্ধ করা যায়।
+
+
+৫/ Reusable functions: বিভিন্ন object type-এর জন্য একই function ব্যবহার করা যায়।
+
+
+৬/ Maintainable code: Object structure বদলালে, corresponding type automatically update হয়।
+ 
+
