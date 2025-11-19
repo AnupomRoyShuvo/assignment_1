@@ -40,13 +40,6 @@ type Books = {
   rating: number;
 };
 
-const books = [
-  { title: "Book A", rating: 4.5 },
-  { title: "Book B", rating: 3.2 },
-  { title: "Book C", rating: 5.0 },
-  { title: "Book D", rating: 6.0 },
-];
-
 const filterByRating = (value: Books[]): Books[] => {
   return value.filter((i) => {
     if (i.rating < 0 || i.rating > 5) {
