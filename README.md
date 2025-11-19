@@ -21,8 +21,13 @@ Interface মূলত একটা object কেমন হবে, Object-এর
 
 পরিশেষে আমরা  Interfaces এবং Types — এর মধ্যে কিছু পার্থক্য বলতে পারি যে, 
 
-interface একাধিকবার একই নামে ঘোষণা করলে TypeScript সেগুলোকে merge করে types এ এটা সম্ভব নয়।
-Union,Intersection,Tuple,Primitive শুধুমাত্র type দিয়ে করা যায় । এগুলো interface দিয়ে করা সম্ভব নয়।
+১/ interface এ declaration merging করা যায় কিন্তু করে types এ declaration merging করা সম্ভব নয়।
+২/ Union,Intersection,Tuple,Primitive শুধুমাত্র type দিয়ে করা যায় কিন্তু এগুলো interface দিয়ে করা সম্ভব নয়।
+৩/ object structure - type দিয়ে করা সম্ভব হলেও , interface ব্যাবহার করা সবচেয়ে ভাল । 
+৪/ আবার interface দিয়ে  function এর type নির্ধারণ করা গেলেও, type ব্যাবহার করা সবচেয়ে ভাল। 
+
+
+
 
 ## 2) keyof এর কাজ
 
