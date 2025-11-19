@@ -46,7 +46,7 @@ typescript এ keyof হল একটি TypeScript keyword, যা কোনো
 কোনো object এর সকল key কে একটি string আকারে রিটার্ন করে। সহজভাবে বললে,কোন object-এর সব প্রপার্টি কী কী তা type হিসেবে পাওয়া যায়। 
 
 
-keyof ব্যাবহার করার কারন গুলো হলঃ 
+## keyof ব্যাবহার করার কারন গুলো হলঃ 
 
 
 ১/ Object-এর key গুলোকে type হিসেবে পাওয়া
